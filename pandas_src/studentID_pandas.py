@@ -1,5 +1,5 @@
 # === 1. Create DataFrames (5 points) ===
-
+import pandas as pd
 
 
 print("✅ df_users:")
