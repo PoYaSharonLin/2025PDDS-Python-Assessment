@@ -1,0 +1,7 @@
+﻿student_id,filename,grade,joined_pts,grouped_pts,sorted_pts,top_user_pts,remarks
+113078517,113078517_python_list.py,70,15,30,15,10,
+studentID,studentID_python_list.py,0,0,0,0,0,"Script failed (exit 1). Stderr: Traceback (most recent call last):
+  File ""/home/poyasharonlin/PDDS/Python/2025PDDS-Python-Assignments/python_list_src/studentID_python_list.py"", line 6, in <module>
+    print(joined)
+NameError: name 'joined' is not defined
+"
