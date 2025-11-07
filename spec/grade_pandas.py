@@ -199,8 +199,7 @@ def run_student_file(path: str) -> Tuple[str, str, int]:
             capture_output=True,
             text=True,
             timeout=TIMEOUT_SECS,
-            cwd=os.path.dirname(abs_path) or None,
-            env={},  # cleaner env
+            cwd=os.path.dirname(abs_path) or None
         )
         return proc.stdout, proc.stderr, proc.returncode
     except subprocess.TimeoutExpired as e:
