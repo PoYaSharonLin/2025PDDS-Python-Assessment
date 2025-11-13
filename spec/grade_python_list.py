@@ -6,6 +6,7 @@ import re
 import subprocess
 from dataclasses import dataclass
 from typing import Any, Dict, Tuple, Optional, List
+import sys
 
 import pandas as pd
 
@@ -135,12 +136,11 @@ def run_student_file(path: str) -> Tuple[str, str, int]:
     abs_path = os.path.abspath(path)
     try:
         proc = subprocess.run(
-            ["python3", abs_path],
+            [sys.executable, abs_path],
             capture_output=True,
             text=True,
             timeout=TIMEOUT_SECS,
-            cwd=os.path.dirname(path) or None,
-            env={},  # empty env for a cleaner run
+            cwd=os.path.dirname(path) or None
         )
         return proc.stdout, proc.stderr, proc.returncode
     except subprocess.TimeoutExpired as e:
