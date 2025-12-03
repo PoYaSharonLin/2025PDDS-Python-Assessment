@@ -1,3 +1,7 @@
 # cd total_submission
 mv *_pandas.py ../pandas_src/
+<<<<<<< HEAD
 mv *_python_list.py ../python_list_src/
+=======
+mv *_python_list.py ../python_list_src/
+>>>>>>> 19d884d0d63449f57a765356da7d5883e8bca657
