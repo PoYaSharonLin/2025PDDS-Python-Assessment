@@ -1,0 +1,3 @@
+# cd total_submission
+mv *_pandas.py ../pandas_src/
+mv *_python_list.py ../python_list_src/
