@@ -1,4 +1,7 @@
 113078517_pandas.py
 113078517_python_list.py
 
+output/
+pandas_src/*
+python_list_src/*
 venv/
